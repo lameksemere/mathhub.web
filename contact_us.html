@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us – Math Hub</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-surface text-on-background min-h-screen flex flex-col">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 shadow-sm bg-white/95 backdrop-blur-md w-full border-b border-gray-100">
+<nav class="flex justify-between items-center w-full px-4 md:px-12 py-4 max-w-7xl mx-auto">
+  <a class="font-bold text-2xl text-blue-700 tracking-tight flex items-center gap-2" href="index.html">
+    <span class="material-symbols-outlined fill text-blue-600 text-4xl">calculate</span>
+    Math Hub
+  </a>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="index.html">Home</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="multiplication.html">Multiplication</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="division.html">Division</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="fractions.html">Fractions</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="about_me.html">About Me</a>
+    <a class="text-blue-700 border-b-4 border-blue-600 pb-1 font-bold text-sm" href="contact_us.html">Contact Us</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button class="signup-btn bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm btn-3d hover:brightness-110 hidden sm:block shadow-md">Sign Up</button>
+    <button aria-label="Menu" class="md:hidden text-blue-600 p-2 bg-blue-50 rounded-full">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+</header>
+
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 md:px-12 py-12 flex flex-col gap-12">
+
+  <!-- Page Header -->
+  <section class="text-center max-w-2xl mx-auto flex flex-col items-center gap-4">
+    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center shadow-md">
+      <span class="material-symbols-outlined fill text-blue-600 text-4xl">waving_hand</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-black text-gray-800">Let's Solve Problems<br/><span class="text-blue-600">Together!</span></h1>
+    <p class="text-gray-500 text-lg leading-relaxed">Have a question about Math Hub? Want to suggest a new feature? Or just want to say hi? Send us a message — we'd love to hear from you!</p>
+  </section>
+
+  <!-- Two Column Layout -->
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+    <!-- Contact Form -->
+    <div class="lg:col-span-7 bg-white rounded-2xl shadow-sm border border-gray-100 p-8 relative overflow-hidden">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-green-500 to-orange-400"></div>
+      <h2 class="text-2xl font-black text-gray-800 mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-blue-600 bg-blue-50 p-2 rounded-xl">mail</span>
+        Send us a Message
+      </h2>
+      <form id="contact-form" class="flex flex-col gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1.5">Full Name</label>
+            <input type="text" name="full-name" placeholder="e.g. John Doe" required
+              class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-500 outline-none text-gray-800 font-medium transition-colors"/>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1.5">Email Address</label>
+            <input type="email" name="email" placeholder="your@email.com" required
+              class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-500 outline-none text-gray-800 font-medium transition-colors"/>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">Subject</label>
+          <select name="subject" required
+            class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-500 outline-none text-gray-800 font-medium transition-colors appearance-none cursor-pointer bg-white">
+            <option value="" disabled selected>Select a subject...</option>
+            <option value="question">Question About Content</option>
+            <option value="feedback">Feedback / Suggestion</option>
+            <option value="support">Technical Support</option>
+            <option value="partnership">Partnership / Schools</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">Message</label>
+          <textarea name="message" placeholder="How can we help you?" rows="5" required
+            class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-blue-500 outline-none text-gray-800 font-medium transition-colors resize-none"></textarea>
+        </div>
+        <div>
+          <button type="submit"
+            class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg px-10 py-4 rounded-full shadow-md transition-colors">
+            <span>Send Message</span>
+            <span class="material-symbols-outlined">send</span>
+          </button>
+        </div>
+        <p id="form-success" class="hidden text-green-600 font-semibold bg-green-50 px-4 py-3 rounded-xl border border-green-200">
+          ✅ Message sent! We'll get back to you soon.
+        </p>
+      </form>
+    </div>
+
+    <!-- Info Column -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+
+      <!-- Contact Info -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col gap-5">
+        <h3 class="text-xl font-black text-gray-800">Get in Touch</h3>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-blue-600">mail</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-800 text-sm mb-0.5">Email Us</p>
+            <a href="mailto:lameksemere.akamom.org" class="text-blue-600 font-semibold hover:underline text-sm break-all">lameksemere.akamom.org</a>
+            <p class="text-gray-400 text-xs mt-1">We reply within 24 hours</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-green-600">call</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-800 text-sm mb-0.5">Phone / WhatsApp</p>
+            <a href="tel:+254743165021" class="text-green-600 font-semibold hover:underline text-sm">+254 743 165 021</a>
+            <p class="text-gray-400 text-xs mt-1">Mon – Fri, 8am – 6pm EAT</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-orange-500">location_on</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-800 text-sm mb-0.5">Location</p>
+            <p class="text-gray-600 text-sm">Kenya 🇰🇪</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+        <h3 class="text-xl font-black text-gray-800 mb-5 flex items-center gap-2">
+          <span class="material-symbols-outlined text-orange-500 bg-orange-50 p-2 rounded-xl text-base">help</span>
+          Common Questions
+        </h3>
+        <div class="divide-y divide-gray-100">
+          <div class="py-3">
+            <button aria-expanded="false" class="accordion-btn w-full flex items-center justify-between py-1 text-left focus:outline-none" onclick="toggleAccordion(this)">
+              <span class="font-semibold text-gray-800 text-sm pr-4">What is Math Hub?</span>
+              <span class="material-symbols-outlined text-gray-400 accordion-icon">expand_more</span>
+            </button>
+            <div class="accordion-content">
+              <p class="text-gray-500 text-sm pt-2 pb-1 pl-2 border-l-2 border-blue-200 ml-1 mt-2">Math Hub is a free interactive maths platform for kids aged 6–10. It covers Multiplication, Division, and Fractions with video lessons and practice questions at three difficulty levels.</p>
+            </div>
+          </div>
+          <div class="py-3">
+            <button aria-expanded="false" class="accordion-btn w-full flex items-center justify-between py-1 text-left focus:outline-none" onclick="toggleAccordion(this)">
+              <span class="font-semibold text-gray-800 text-sm pr-4">Is Math Hub free?</span>
+              <span class="material-symbols-outlined text-gray-400 accordion-icon">expand_more</span>
+            </button>
+            <div class="accordion-content">
+              <p class="text-gray-500 text-sm pt-2 pb-1 pl-2 border-l-2 border-blue-200 ml-1 mt-2">Yes! Easy level practice is free for everyone. Sign up for a free account to unlock Medium and Hard level challenges.</p>
+            </div>
+          </div>
+          <div class="py-3">
+            <button aria-expanded="false" class="accordion-btn w-full flex items-center justify-between py-1 text-left focus:outline-none" onclick="toggleAccordion(this)">
+              <span class="font-semibold text-gray-800 text-sm pr-4">How do I unlock harder levels?</span>
+              <span class="material-symbols-outlined text-gray-400 accordion-icon">expand_more</span>
+            </button>
+            <div class="accordion-content">
+              <p class="text-gray-500 text-sm pt-2 pb-1 pl-2 border-l-2 border-blue-200 ml-1 mt-2">Simply click "Sign Up" and create a free account. Once logged in, you'll have access to Medium and Hard questions on all topic pages.</p>
+            </div>
+          </div>
+          <div class="py-3">
+            <button aria-expanded="false" class="accordion-btn w-full flex items-center justify-between py-1 text-left focus:outline-none" onclick="toggleAccordion(this)">
+              <span class="font-semibold text-gray-800 text-sm pr-4">What age is Math Hub for?</span>
+              <span class="material-symbols-outlined text-gray-400 accordion-icon">expand_more</span>
+            </button>
+            <div class="accordion-content">
+              <p class="text-gray-500 text-sm pt-2 pb-1 pl-2 border-l-2 border-blue-200 ml-1 mt-2">Math Hub is designed for children aged 6 to 10 years old. All questions, videos, and explanations are tailored to this age group.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-12 mt-8">
+  <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row justify-between items-start gap-8">
+    <div class="flex flex-col gap-3">
+      <div class="font-black text-xl text-white flex items-center gap-2">
+        <span class="material-symbols-outlined fill text-blue-400">calculate</span>
+        Math Hub
+      </div>
+      <p class="text-sm text-gray-400 max-w-xs">Making Mathematics Easy, Fun, and Interactive!</p>
+      <p class="text-xs text-gray-600 mt-2">© 2026 Math Hub by Lamek Semere. All rights reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
+      <a class="hover:text-white hover:underline transition-colors" href="index.html">Home</a>
+      <a class="hover:text-white hover:underline transition-colors" href="multiplication.html">Multiplication</a>
+      <a class="hover:text-white hover:underline transition-colors" href="division.html">Division</a>
+      <a class="hover:text-white hover:underline transition-colors" href="fractions.html">Fractions</a>
+      <a class="hover:text-white hover:underline transition-colors" href="about_me.html">About Me</a>
+      <a class="text-blue-400 font-bold" href="contact_us.html">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('form-success').classList.remove('hidden');
+  this.reset();
+  setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 5000);
+});
+</script>
+</body>
+</html>

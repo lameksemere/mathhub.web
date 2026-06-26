@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Division – Math Hub</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-surface text-on-background min-h-screen flex flex-col">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 shadow-sm bg-white/95 backdrop-blur-md w-full border-b border-gray-100">
+<nav class="flex justify-between items-center w-full px-4 md:px-12 py-4 max-w-7xl mx-auto">
+  <a class="font-bold text-2xl text-blue-700 tracking-tight flex items-center gap-2" href="index.html">
+    <span class="material-symbols-outlined fill text-blue-600 text-4xl">calculate</span>
+    Math Hub
+  </a>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="index.html">Home</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="multiplication.html">Multiplication</a>
+    <a class="text-blue-700 border-b-4 border-blue-600 pb-1 font-bold text-sm" href="division.html">Division</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="fractions.html">Fractions</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="about_me.html">About Me</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="contact_us.html">Contact Us</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button class="signup-btn bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm btn-3d hover:brightness-110 hidden sm:block shadow-md">Sign Up</button>
+    <button aria-label="Menu" class="md:hidden text-blue-600 p-2 bg-blue-50 rounded-full">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+</header>
+
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 md:px-12 py-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+  <!-- Left: Main Content -->
+  <div class="lg:col-span-8 flex flex-col gap-8">
+
+    <!-- Hero Card -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-green-500 border border-gray-100">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-700 text-3xl font-black">÷</div>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-black text-gray-800">Understanding Division</h1>
+          <span class="inline-flex items-center gap-1 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold mt-1">Ages 6–10 · 3 Levels</span>
+        </div>
+      </div>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Division is all about splitting things into equal groups. Imagine you have <strong>12 cookies</strong> and want to share them equally among <strong>3 friends</strong>. Division helps you figure out exactly how many cookies each friend gets — it's the fair way to share!
+      </p>
+      <!-- Key concept boxes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div class="bg-green-50 rounded-xl p-4 border border-green-100 text-center">
+          <div class="text-2xl font-black text-green-700">12 ÷ 3</div>
+          <div class="text-sm text-gray-500 mt-1">Dividend ÷ Divisor</div>
+          <div class="text-xl font-black text-green-600 mt-1">= 4</div>
+          <div class="text-xs text-gray-400">Quotient</div>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-4 border border-blue-100 text-center">
+          <div class="text-sm font-bold text-blue-700 mb-2">The Opposite Rule</div>
+          <div class="text-sm text-gray-600">If <strong>3 × 4 = 12</strong><br/>then <strong>12 ÷ 3 = 4</strong> ✓</div>
+        </div>
+        <div class="bg-orange-50 rounded-xl p-4 border border-orange-100 text-center">
+          <div class="text-sm font-bold text-orange-700 mb-2">Zero Rule</div>
+          <div class="text-sm text-gray-600">You can <strong>never</strong> divide by zero — it's impossible!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div class="p-6 border-b border-gray-100 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <h2 class="text-xl font-black text-gray-800">Division Basics – Video Lesson</h2>
+          <p class="text-gray-500 text-sm mt-1">Watch first, then try the practice questions below.</p>
+        </div>
+        <span class="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-1.5 rounded-full text-sm font-bold border border-red-100">
+          <span class="material-symbols-outlined text-base">ondemand_video</span>
+          Video Lesson
+        </span>
+      </div>
+      <div class="relative w-full pb-[56.25%] bg-gray-900 rounded-xl overflow-hidden">
+<iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/lidkiotq8WU?si=sp-q2r6EQxMiKWHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+ 
+      <div class="p-4 bg-green-50 text-green-700 text-sm font-semibold flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">tips_and_updates</span>
+        Tip: Pause and replay any section as you work through the practice problems below.
+      </div>
+    </section>
+
+    <!-- Practice Questions with Level Tabs -->
+    <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+      <div class="flex items-center gap-4 mb-2">
+        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-700">
+          <span class="material-symbols-outlined">edit_note</span>
+        </div>
+        <div>
+          <h2 class="text-2xl font-black text-gray-800">Practice Questions</h2>
+          <p class="text-gray-500 text-sm">Choose your difficulty level. Type your answer and click Check Answers.</p>
+        </div>
+      </div>
+
+      <!-- Level Tabs -->
+      <div class="level-tabs-container mt-6">
+        <div class="flex flex-wrap gap-3 mb-6">
+          <button class="level-tab active-level-tab" data-level="easy">
+            <span>🟢</span> Easy
+          </button>
+          <button class="level-tab" data-level="medium" data-requires-auth="true">
+            <span>🟡</span> Medium
+            <span class="lock-icon material-symbols-outlined text-sm">lock</span>
+          </button>
+          <button class="level-tab" data-level="hard" data-requires-auth="true">
+            <span>🔴</span> Hard
+            <span class="lock-icon material-symbols-outlined text-sm">lock</span>
+          </button>
+        </div>
+
+        <!-- EASY PANEL -->
+        <div class="level-panel" data-level="easy">
+          <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-5 flex items-center gap-3">
+            <span class="text-2xl">🟢</span>
+            <div>
+              <p class="font-bold text-green-800 text-sm">Easy Level — For Ages 6–7</p>
+              <p class="text-green-700 text-xs">Simple one-digit divisors. Divide small numbers with no remainders.</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6" id="easy-grid">
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">6 ÷ 2 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">9 ÷ 3 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">8 ÷ 4 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">10 ÷ 2 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">12 ÷ 3 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">15 ÷ 5 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">16 ÷ 4 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">20 ÷ 5 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-green-500 outline-none transition-colors"/>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="check-answers-btn bg-green-600 text-white px-8 py-3 rounded-full font-bold text-base hover:bg-green-700 transition-colors shadow-md flex items-center gap-2" data-answers="3,3,2,5,4,3,4,4">
+              <span class="material-symbols-outlined">check_circle</span> Check Answers
+            </button>
+          </div>
+        </div>
+
+        <!-- MEDIUM PANEL -->
+        <div class="level-panel hidden" data-level="medium">
+          <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-5 flex items-center gap-3">
+            <span class="text-2xl">🟡</span>
+            <div>
+              <p class="font-bold text-yellow-800 text-sm">Medium Level — For Ages 7–9</p>
+              <p class="text-yellow-700 text-xs">Two-digit ÷ one-digit problems. Watch for remainders!</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">24 ÷ 3 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">36 ÷ 6 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">45 ÷ 5 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">63 ÷ 7 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">54 ÷ 9 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">42 ÷ 6 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">56 ÷ 8 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">81 ÷ 9 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-yellow-500 outline-none transition-colors"/>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="check-answers-btn bg-yellow-500 text-white px-8 py-3 rounded-full font-bold text-base hover:bg-yellow-600 transition-colors shadow-md flex items-center gap-2" data-answers="8,6,9,9,6,7,7,9">
+              <span class="material-symbols-outlined">check_circle</span> Check Answers
+            </button>
+          </div>
+        </div>
+
+        <!-- HARD PANEL -->
+        <div class="level-panel hidden" data-level="hard">
+          <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-5 flex items-center gap-3">
+            <span class="text-2xl">🔴</span>
+            <div>
+              <p class="font-bold text-red-800 text-sm">Hard Level — For Ages 9–10</p>
+              <p class="text-red-700 text-xs">Three-digit ÷ single/double-digit. These are real brain teasers!</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">144 ÷ 12 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">132 ÷ 11 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">180 ÷ 9 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">225 ÷ 15 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">196 ÷ 14 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">256 ÷ 16 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">360 ÷ 18 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <span class="text-xl font-black text-gray-800">400 ÷ 20 =</span>
+              <input type="number" placeholder="?" class="w-20 p-2 border-2 border-gray-200 rounded-lg font-bold text-center focus:border-red-500 outline-none transition-colors"/>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button type="button" class="check-answers-btn bg-red-600 text-white px-8 py-3 rounded-full font-bold text-base hover:bg-red-700 transition-colors shadow-md flex items-center gap-2" data-answers="12,12,20,15,14,16,20,20">
+              <span class="material-symbols-outlined">check_circle</span> Check Answers
+            </button>
+          </div>
+        </div>
+      </div><!-- end level-tabs-container -->
+    </section>
+  </div>
+
+  <!-- Right Sidebar -->
+  <aside class="lg:col-span-4 flex flex-col gap-6">
+
+    <!-- Tips Card -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-24">
+      <h3 class="text-lg font-black text-gray-800 mb-5 flex items-center gap-2">
+        <span class="material-symbols-outlined fill text-yellow-500 bg-yellow-50 p-2 rounded-xl text-base">lightbulb</span>
+        Tips &amp; Fun Facts
+      </h3>
+      <div class="flex flex-col gap-4">
+        <div class="bg-blue-50 rounded-xl p-4 flex gap-3 items-start">
+          <span class="material-symbols-outlined text-blue-600 text-xl mt-0.5">autorenew</span>
+          <div>
+            <p class="font-bold text-blue-800 text-sm">The Opposite Rule</p>
+            <p class="text-blue-700 text-xs mt-1">Division is the opposite of multiplication. If 3 × 4 = 12, then 12 ÷ 3 = 4!</p>
+          </div>
+        </div>
+        <div class="bg-red-50 rounded-xl p-4 flex gap-3 items-start">
+          <span class="material-symbols-outlined text-red-500 text-xl mt-0.5">block</span>
+          <div>
+            <p class="font-bold text-red-700 text-sm">The Zero Rule</p>
+            <p class="text-red-600 text-xs mt-1">You can NEVER divide any number by zero. It's mathematically impossible!</p>
+          </div>
+        </div>
+        <div class="bg-green-50 rounded-xl p-4 flex gap-3 items-start">
+          <span class="material-symbols-outlined text-green-600 text-xl mt-0.5">looks_one</span>
+          <div>
+            <p class="font-bold text-green-700 text-sm">Divide by One</p>
+            <p class="text-green-600 text-xs mt-1">Any number divided by 1 is always itself. 100 ÷ 1 = 100!</p>
+          </div>
+        </div>
+        <div class="bg-orange-50 rounded-xl p-4 flex gap-3 items-start">
+          <span class="material-symbols-outlined text-orange-500 text-xl mt-0.5">tips_and_updates</span>
+          <div>
+            <p class="font-bold text-orange-700 text-sm">Use Multiplication!</p>
+            <p class="text-orange-600 text-xs mt-1">To check: if you got 12 ÷ 4 = 3, multiply back: 3 × 4 = 12 ✓</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Levels Guide -->
+      <div class="mt-6 pt-6 border-t border-gray-100">
+        <p class="font-bold text-gray-700 text-sm mb-3">📊 Difficulty Guide</p>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-between bg-green-50 px-3 py-2 rounded-lg">
+            <span class="text-sm font-semibold text-green-700">🟢 Easy</span>
+            <span class="text-xs text-green-600">Ages 6–7 · Free</span>
+          </div>
+          <div class="flex items-center justify-between bg-yellow-50 px-3 py-2 rounded-lg">
+            <span class="text-sm font-semibold text-yellow-700">🟡 Medium</span>
+            <span class="text-xs text-yellow-600">Ages 7–9 · Sign up</span>
+          </div>
+          <div class="flex items-center justify-between bg-red-50 px-3 py-2 rounded-lg">
+            <span class="text-sm font-semibold text-red-700">🔴 Hard</span>
+            <span class="text-xs text-red-600">Ages 9–10 · Sign up</span>
+          </div>
+        </div>
+        <button onclick="showAuthModal('signup')" class="w-full mt-4 bg-blue-600 text-white py-2.5 rounded-xl font-bold text-sm hover:bg-blue-700 transition-colors">
+          🔓 Unlock Medium & Hard
+        </button>
+      </div>
+<div class="mt-lg pt-lg border-t border-tertiary-fixed-dim/30">
+<div class="w-full h-40 bg-contain bg-center bg-no-repeat mb-sm" data-alt="A cute, stylized 3D mascot character of an owl wearing reading glasses, holding a chalkboard with division symbols. The aesthetic is bright, educational, and friendly, using a warm color palette with yellow and orange accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCw3k-gr9GzFfvo9lm23xoVwt8LHZ8yAkGooKQ5yCNnPz8xwBLSZ9fO_ODTnOvMDm4UImEB0m5dHQtHdI-r7F2i6YU177M6QT1w5zdCm7Ut_diidxZ9qUHk97_Mp_zo0d_Fm-6sKvOMKlo8pFqIz2IBDcyqmau-IL43t9ld_3c_rnklpS3wliQ3QGWJIEieZXJBEZgkt0O-RLilFkE4lqd6ehYvQOb23vyhwEFRAQPG3mdL8xt715KT-JWtXVsIAsrR3yjQa9t9EYXu')"></div>
+<p class="text-center font-label-sm text-label-sm text-on-tertiary-fixed-variant italic">"Every problem has a solution."</p>
+</div>
+    </div>
+
+    <!-- Explore More -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <h3 class="text-base font-black text-gray-800 mb-4">Explore More Topics</h3>
+      <div class="flex flex-col gap-3">
+        <a href="multiplication.html" class="flex items-center gap-3 p-3 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
+          <div class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black">×</div>
+          <div><p class="font-bold text-blue-800 text-sm">Multiplication</p><p class="text-blue-600 text-xs">Times tables &amp; arrays</p></div>
+        </a>
+        <a href="fractions.html" class="flex items-center gap-3 p-3 bg-orange-50 rounded-xl hover:bg-orange-100 transition-colors">
+          <div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center text-white">
+            <span class="material-symbols-outlined text-sm">pie_chart</span>
+          </div>
+          <div><p class="font-bold text-orange-800 text-sm">Fractions</p><p class="text-orange-600 text-xs">Parts of a whole</p></div>
+        </a>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-12 mt-8">
+  <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row justify-between items-start gap-8">
+    <div class="flex flex-col gap-3">
+      <div class="font-black text-xl text-white flex items-center gap-2">
+        <span class="material-symbols-outlined fill text-blue-400">calculate</span>
+        Math Hub
+      </div>
+      <p class="text-xs text-gray-600 mt-2">© 2026 Math Hub by Lamek Semere. All rights reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
+      <a class="hover:text-white hover:underline transition-colors" href="index.html">Home</a>
+      <a class="hover:text-white hover:underline transition-colors" href="multiplication.html">Multiplication</a>
+      <a class="text-blue-400 font-bold" href="division.html">Division</a>
+      <a class="hover:text-white hover:underline transition-colors" href="fractions.html">Fractions</a>
+      <a class="hover:text-white hover:underline transition-colors" href="about_me.html">About Me</a>
+      <a class="hover:text-white hover:underline transition-colors" href="contact_us.html">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

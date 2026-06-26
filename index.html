@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Math Hub – Learn Maths the Fun Way!</title>
+<meta name="description" content="Math Hub is an interactive learning platform for kids aged 6–10. Practice multiplication, division, and fractions with Easy, Medium, and Hard challenges."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind-config.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-surface text-on-background min-h-screen flex flex-col">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 shadow-sm bg-white/95 backdrop-blur-md w-full border-b border-gray-100">
+<nav class="flex justify-between items-center w-full px-4 md:px-12 py-4 max-w-7xl mx-auto">
+  <a class="font-bold text-2xl text-blue-700 tracking-tight flex items-center gap-2" href="index.html">
+    <span class="material-symbols-outlined fill text-blue-600 text-4xl">calculate</span>
+    Math Hub
+  </a>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-blue-700 border-b-4 border-blue-600 pb-1 font-bold text-sm hover:text-blue-700 transition-colors" href="index.html">Home</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="multiplication.html">Multiplication</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="division.html">Division</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="fractions.html">Fractions</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="about_me.html">About Me</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="contact_us.html">Contact Us</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button class="signup-btn bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm btn-3d hover:brightness-110 hidden sm:block shadow-md">Sign Up</button>
+    <button aria-label="Menu" class="md:hidden text-blue-600 p-2 bg-blue-50 rounded-full">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+</header>
+
+<main class="flex-grow w-full">
+
+  <!-- HERO -->
+  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white overflow-hidden">
+    <!-- Decorative blobs -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-green-400/10 rounded-full translate-y-1/2 -translate-x-1/4 blur-3xl"></div>
+    <!-- Floating math symbols -->
+    <div class="absolute top-16 left-8 text-white/15 text-6xl font-black select-none animate-bounce" style="animation-duration:3s">+</div>
+    <div class="absolute top-32 right-16 text-white/10 text-5xl font-black select-none" style="animation:float 5s ease-in-out infinite">×</div>
+    <div class="absolute bottom-16 left-1/4 text-white/10 text-4xl font-black select-none" style="animation:float 7s ease-in-out infinite reverse">÷</div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-12 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1 flex flex-col gap-6 z-10">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/15 backdrop-blur rounded-full text-sm font-semibold w-fit border border-white/20">
+          <span class="material-symbols-outlined fill text-yellow-300 text-base">star</span>
+          For Kids Aged 6–10 Years
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black leading-tight">
+          Make Maths<br/>
+          <span class="text-yellow-300 drop-shadow-md">Your Superpower!</span>
+        </h1>
+        <p class="text-blue-100 text-lg md:text-xl leading-relaxed max-w-lg">
+          Learn Multiplication, Division &amp; Fractions with fun lessons, interactive challenges, and step-by-step videos — all designed for young learners.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="multiplication.html" class="bg-yellow-400 text-yellow-900 px-8 py-4 rounded-full font-black text-lg hover:bg-yellow-300 transition-colors shadow-xl flex items-center gap-2">
+            Start Learning
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <button onclick="showAuthModal('signup')" class="signup-btn bg-white/15 border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/25 transition-colors backdrop-blur flex items-center gap-2">
+            <span class="material-symbols-outlined">person_add</span>
+            Sign Up Free
+          </button>
+        </div>
+        <!-- Stats bar -->
+        <div class="flex flex-wrap gap-6 pt-4 border-t border-white/20 mt-2">
+          <div class="text-center">
+            <div class="text-2xl font-black text-yellow-300">3</div>
+            <div class="text-xs text-blue-200 font-semibold">Topics</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-black text-yellow-300">Easy→Hard</div>
+            <div class="text-xs text-blue-200 font-semibold">3 Levels</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-black text-yellow-300">100%</div>
+            <div class="text-xs text-blue-200 font-semibold">Free to Try</div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Visual -->
+      <div class="flex-1 flex items-center justify-center z-10 max-w-sm md:max-w-md w-full">
+        <div class="relative">
+          <!-- Math cards floating -->
+          <div class="bg-white rounded-3xl shadow-2xl p-8 text-center float-slow">
+            <div class="text-6xl font-black text-blue-600 mb-2">6 × 7</div>
+            <div class="text-3xl font-black text-green-600">= 42 ✓</div>
+            <div class="mt-4 text-sm text-gray-500 font-semibold">Multiplication · Easy Level</div>
+          </div>
+          <div class="absolute -top-4 -right-8 bg-yellow-400 rounded-2xl shadow-xl p-4 float-medium">
+            <div class="text-2xl font-black text-yellow-900">🏆</div>
+            <div class="text-xs font-bold text-yellow-800">10/10!</div>
+          </div>
+          <div class="absolute -bottom-4 -left-8 bg-green-400 rounded-2xl shadow-xl p-4" style="animation:float 5s ease-in-out infinite">
+            <div class="text-2xl font-black text-green-900">⭐</div>
+            <div class="text-xs font-bold text-green-800">Level Up!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full text-blue-700 font-semibold text-sm mb-4">
+          <span class="material-symbols-outlined fill text-base">rocket_launch</span>
+          How It Works
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black text-gray-800">Three Steps to Math Mastery</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center flex flex-col items-center gap-4 fade-in-up">
+          <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined fill text-blue-600 text-4xl">play_circle</span>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-black flex items-center justify-center text-sm -mt-12 ml-12 border-2 border-white shadow">1</div>
+          <h3 class="text-xl font-bold text-gray-800">Watch the Lesson</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Every topic has a friendly video that explains the concept step by step — easy for young learners to follow.</p>
+        </div>
+        <div class="text-center flex flex-col items-center gap-4 fade-in-up delay-100">
+          <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined fill text-green-600 text-4xl">edit_note</span>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-green-600 text-white font-black flex items-center justify-center text-sm -mt-12 ml-12 border-2 border-white shadow">2</div>
+          <h3 class="text-xl font-bold text-gray-800">Practice Your Skills</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Start with Easy questions. Sign up to unlock Medium and Hard challenges as you grow more confident.</p>
+        </div>
+        <div class="text-center flex flex-col items-center gap-4 fade-in-up delay-200">
+          <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined fill text-yellow-600 text-4xl">emoji_events</span>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-yellow-500 text-white font-black flex items-center justify-center text-sm -mt-12 ml-12 border-2 border-white shadow">3</div>
+          <h3 class="text-xl font-bold text-gray-800">Level Up!</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Check your answers and see your score. Work your way from Easy → Medium → Hard and become a Math Champion!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS GRID -->
+  <section class="bg-blue-50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-blue-700 font-semibold text-sm mb-4 shadow-sm">
+          <span class="material-symbols-outlined fill text-base">menu_book</span>
+          Topics
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black text-gray-800">What Will You Learn Today?</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Each topic includes a video lesson and practice questions with three difficulty levels.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Multiplication -->
+        <a href="multiplication.html" class="group card-lift bg-white rounded-2xl p-8 shadow-sm border border-blue-100 relative overflow-hidden flex flex-col gap-4">
+          <div class="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 text-4xl font-black group-hover:bg-blue-600 group-hover:text-white transition-colors">×</div>
+          <div>
+            <h3 class="text-xl font-black text-gray-800">Multiplication</h3>
+            <p class="text-gray-500 text-sm mt-1 leading-relaxed">Master your times tables through fun patterns and visual arrays. From 1×1 to advanced problems!</p>
+          </div>
+          <div class="flex gap-2 mt-auto pt-2">
+            <span class="badge-easy px-3 py-1 rounded-full text-xs font-bold">Easy</span>
+            <span class="badge-medium px-3 py-1 rounded-full text-xs font-bold">Medium 🔒</span>
+            <span class="badge-hard px-3 py-1 rounded-full text-xs font-bold">Hard 🔒</span>
+          </div>
+        </a>
+        <!-- Division -->
+        <a href="division.html" class="group card-lift bg-white rounded-2xl p-8 shadow-sm border border-green-100 relative overflow-hidden flex flex-col gap-4">
+          <div class="absolute top-0 left-0 w-full h-2 bg-green-600"></div>
+          <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-green-600 text-4xl font-black group-hover:bg-green-600 group-hover:text-white transition-colors">÷</div>
+          <div>
+            <h3 class="text-xl font-black text-gray-800">Division</h3>
+            <p class="text-gray-500 text-sm mt-1 leading-relaxed">Learn how to split things fairly! Understand remainders and solve real-life division problems.</p>
+          </div>
+          <div class="flex gap-2 mt-auto pt-2">
+            <span class="badge-easy px-3 py-1 rounded-full text-xs font-bold">Easy</span>
+            <span class="badge-medium px-3 py-1 rounded-full text-xs font-bold">Medium 🔒</span>
+            <span class="badge-hard px-3 py-1 rounded-full text-xs font-bold">Hard 🔒</span>
+          </div>
+        </a>
+        <!-- Fractions -->
+        <a href="fractions.html" class="group card-lift bg-white rounded-2xl p-8 shadow-sm border border-orange-100 relative overflow-hidden flex flex-col gap-4">
+          <div class="absolute top-0 left-0 w-full h-2 bg-orange-500"></div>
+          <div class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-3xl">pie_chart</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-black text-gray-800">Fractions</h3>
+            <p class="text-gray-500 text-sm mt-1 leading-relaxed">Discover parts of a whole using pizzas, chocolate bars, and colourful blocks. Fractions made simple!</p>
+          </div>
+          <div class="flex gap-2 mt-auto pt-2">
+            <span class="badge-easy px-3 py-1 rounded-full text-xs font-bold">Easy</span>
+            <span class="badge-medium px-3 py-1 rounded-full text-xs font-bold">Medium 🔒</span>
+            <span class="badge-hard px-3 py-1 rounded-full text-xs font-bold">Hard 🔒</span>
+          </div>
+        </a>
+      </div>
+      <!-- Unlock CTA -->
+      <div class="mt-8 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl text-white">
+        <div>
+          <h3 class="text-2xl font-black">🔓 Unlock Medium &amp; Hard Levels</h3>
+          <p class="text-blue-100 mt-1">Sign up for free to access all difficulty levels and track your progress!</p>
+        </div>
+        <button onclick="showAuthModal('signup')" class="bg-yellow-400 text-yellow-900 px-8 py-3 rounded-full font-black text-lg hover:bg-yellow-300 transition-colors shadow-lg whitespace-nowrap">
+          Sign Up Free →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MATH HUB -->
+  <section class="bg-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full text-green-700 font-semibold text-sm mb-6">
+            <span class="material-symbols-outlined fill text-base">favorite</span>
+            Why Parents Love Math Hub
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-gray-800 mb-6">Built for Young Learners, Ages 6–10</h2>
+          <div class="flex flex-col gap-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined fill text-blue-600">school</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Age-Appropriate Difficulty</h4>
+                <p class="text-gray-500 text-sm mt-1">Questions are carefully designed for 6–10 year olds. Easy builds confidence, Medium develops skill, Hard challenges the best!</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined fill text-green-600">videocam</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Video Lessons Included</h4>
+                <p class="text-gray-500 text-sm mt-1">Every topic includes a clear, engaging video lesson so students understand before they practise.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined fill text-yellow-600">emoji_events</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Instant Feedback &amp; Scores</h4>
+                <p class="text-gray-500 text-sm mt-1">Students check their answers immediately and see their score — encouraging them to improve and try again.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined fill text-purple-600">devices</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Works on Any Device</h4>
+                <p class="text-gray-500 text-sm mt-1">Phone, tablet, or computer — Math Hub works beautifully on all screens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quote card -->
+        <div class="flex flex-col gap-6">
+          <div class="bg-blue-600 text-white rounded-3xl p-8 shadow-xl relative">
+            <div class="text-5xl font-black text-blue-300 leading-none">"</div>
+            <p class="text-lg font-semibold mt-2 leading-relaxed">My child actually asks to practise maths now! The levels keep it fun and challenging at the same time.</p>
+            <div class="flex items-center gap-3 mt-6">
+              <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center font-black text-xl">S</div>
+              <div>
+                <div class="font-bold">Fiori.M</div>
+                <div class="text-blue-200 text-sm">Parent of a 8-year-old</div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-green-50 border border-green-100 rounded-2xl p-6 text-center">
+              <div class="text-3xl font-black text-green-600">Easy</div>
+              <div class="text-sm text-gray-500 mt-1">Free for everyone</div>
+            </div>
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+              <div class="text-3xl font-black text-blue-600">Med+Hard</div>
+              <div class="text-sm text-gray-500 mt-1">Sign up free 🔒</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-gradient-to-br from-indigo-700 via-blue-700 to-blue-600 py-20 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-5xl mb-6">🚀</div>
+      <h2 class="text-4xl md:text-5xl font-black mb-4">Ready to Become a<br/><span class="text-yellow-300">Maths Champion?</span></h2>
+      <p class="text-blue-100 text-lg mb-8">Join thousands of young learners building their math confidence every day.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="multiplication.html" class="bg-yellow-400 text-yellow-900 px-10 py-4 rounded-full font-black text-xl hover:bg-yellow-300 transition-colors shadow-xl">
+          Start Free Now →
+        </a>
+        <button onclick="showAuthModal('signup')" class="bg-white/15 border-2 border-white/30 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-white/25 transition-colors">
+          Create Account
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row justify-between items-start gap-8">
+    <div class="flex flex-col gap-3">
+      <div class="font-black text-xl text-white flex items-center gap-2">
+        <span class="material-symbols-outlined fill text-blue-400">calculate</span>
+        Math Hub
+      </div>
+      <p class="text-sm text-gray-400 max-w-xs">Empowering young mathematicians everywhere. Fun, interactive maths for ages 6–10.</p>
+      <p class="text-xs text-gray-600 mt-2">© 2026 Math Hub by Lamek Semere. All rights reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
+      <a class="hover:text-white hover:underline transition-colors" href="index.html">Home</a>
+      <a class="hover:text-white hover:underline transition-colors" href="multiplication.html">Multiplication</a>
+      <a class="hover:text-white hover:underline transition-colors" href="division.html">Division</a>
+      <a class="hover:text-white hover:underline transition-colors" href="fractions.html">Fractions</a>
+      <a class="hover:text-white hover:underline transition-colors" href="about_me.html">About Me</a>
+      <a class="hover:text-white hover:underline transition-colors" href="contact_us.html">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

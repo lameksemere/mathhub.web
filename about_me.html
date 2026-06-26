@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-surface text-on-background min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+   <!-- NAV -->
+<header class="sticky top-0 z-50 shadow-sm bg-white/95 backdrop-blur-md w-full border-b border-gray-100">
+<nav class="flex justify-between items-center w-full px-4 md:px-12 py-4 max-w-7xl mx-auto">
+  <a class="font-bold text-2xl text-blue-700 tracking-tight flex items-center gap-2" href="index.html">
+    <span class="material-symbols-outlined fill text-blue-600 text-4xl">calculate</span>
+    Math Hub
+  </a>
+  <div class="hidden md:flex items-center gap-8">
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="index.html">Home</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="multiplication.html">Multiplication</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="division.html">Division</a>
+    <a class="text-blue-700 border-b-4 border-blue-600 pb-1 font-bold text-sm" href="fractions.html">Fractions</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="about_me.html">About Me</a>
+    <a class="text-gray-600 font-semibold text-sm hover:text-blue-700 transition-colors" href="contact_us.html">Contact Us</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <button class="signup-btn bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm btn-3d hover:brightness-110 hidden sm:block shadow-md">Sign Up</button>
+    <button aria-label="Menu" class="md:hidden text-blue-600 p-2 bg-blue-50 rounded-full">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+</header>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl space-y-xl">
+        <!-- Hero / Profile Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center relative">
+            <!-- Profile Image Container with Asymmetric Decorative Elements -->
+            <div class="col-span-1 md:col-span-5 relative flex justify-center">
+                <!-- Decorative background shape -->
+                <div
+                    class="absolute inset-0 bg-primary-container rounded-[4rem] transform rotate-3 scale-105 -z-10 opacity-30">
+                </div>
+                <div
+                    class="absolute inset-0 bg-secondary-container rounded-[3rem] transform -rotate-3 scale-105 -z-20 opacity-40 translate-x-4 translate-y-4">
+                </div>
+                <img alt="Lamek Semere"
+                    class="w-full max-w-[400px] aspect-[4/5] object-cover rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border-4 border-surface-container-lowest z-10 hover:scale-[1.02] transition-transform duration-500"
+                    data-alt="A bright, friendly portrait of a young student, Lamek Semere, sitting with a notebook in a cheerful, light-filled study space. The lighting is soft, high-key, and inviting, creating a modern light-mode aesthetic. He is smiling warmly, like a classmate who finally 'gets it' and wants to share the trick. The color palette features a crisp white environment accented subtly by deep professional blues (#0058be) and vibrant energetic greens (#006c49) to match a playful STEM learning brand identity."
+                    src="user100.jpg" />
+            </div>
+            <!-- Profile Narrative -->
+            <div class="col-span-1 md:col-span-7 space-y-lg">
+                <div
+                    class="inline-flex items-center gap-sm bg-surface-container-low px-md py-base rounded-full shadow-sm text-secondary font-label-lg text-label-lg mb-4">
+                    <span class="material-symbols-outlined filled-icon" data-icon="school">school</span>
+                    Student &amp; Creator
+                </div>
+                <h1 class="font-display-lg text-display-lg text-on-background tracking-tight">
+                    Meet the Creator
+                </h1>
+                <div class="space-y-md font-body-lg text-body-lg text-on-surface-variant">
+                    <p>
+                        Hi, I'm <strong class="text-primary">Lamek Semere</strong>, still a student myself,
+                        Math once felt like a book stuck high on a shelf.
+                        Numbers seemed strict, every rule set in stone,
+                        Like a language of order I'd learn on my own.
+                    </p>
+                    <p>
+                        So between my own homework and late-night review,
+                        I started to build something fresh and brand new.
+                        Math Hub is the helper I wished I once had—
+                        Less "rule to memorize," more "puzzle, not bad!"
+                        Now "I can't solve this" turns into "let me try,"
+                        One more attempt, and we'll figure out why.
+                    </p>
+                </div>
+                <div class="pt-base">
+                    <button
+                        class="bg-secondary text-on-secondary font-label-lg text-label-lg px-lg py-sm rounded-full shadow-[0_2px_0_0_#005236] hover:-translate-y-0.5 hover:shadow-[0_4px_0_0_#005236] active:translate-y-0.5 active:shadow-none transition-all duration-200 min-h-[44px] inline-flex items-center gap-sm">
+                        <a href="contact_us.html" class="flex items-center gap-sm">
+                            <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                            Get in Touch
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Bento Grid: Goal & Vision -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter pt-lg">
+            <!-- Goal Card -->
+            <div
+                class="bg-surface-container-lowest rounded-xl p-md shadow-[0_4px_20px_rgb(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:scale-[1.01] transition-all duration-300 relative overflow-hidden group">
+                <!-- Top Cap Accent -->
+                <div class="absolute top-0 left-0 w-full h-[6px] bg-secondary"></div>
+                <div class="flex items-start gap-md mt-sm">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]" data-icon="target">target</span>
+                    </div>
+                    <div>
+                        <h2 class="font-headline-md text-headline-md text-on-background mb-sm">My Goal</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            To chase math anxiety away for good,
+                            With lessons that feel just the way they should—
+                            Tactile and playful, a cheer in each click,
+                            So every small mistake is just a quick trick
+                            to learn from, not fear. One step, then the next,
+                            Until "Aha!" shows up, right on cue, right on text.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vision Card (Quote Style) -->
+            <div
+                class="bg-primary rounded-xl p-md shadow-[0_4px_20px_rgb(0,88,190,0.2)] hover:shadow-[0_8px_30px_rgb(0,88,190,0.3)] hover:scale-[1.01] transition-all duration-300 relative overflow-hidden flex flex-col justify-center">
+                <!-- Decorative faded icon in background -->
+                <span
+                    class="material-symbols-outlined absolute -bottom-10 -right-10 text-[180px] text-primary-fixed-dim opacity-20 pointer-events-none transform -rotate-12"
+                    data-icon="format_quote">format_quote</span>
+                <div class="relative z-10 pl-sm border-l-4 border-inverse-primary">
+                    <h2 class="font-label-lg text-label-lg text-inverse-primary mb-md uppercase tracking-wider">Vision
+                        Statement</h2>
+                    <blockquote class="font-headline-md text-headline-md text-on-primary italic leading-relaxed">
+                        "Math is a playful language, not a test to dread,
+                        Teach it like poetry, not a rule to be read."
+                    </blockquote>
+                    <div class="mt-md font-label-lg text-label-lg text-primary-fixed-dim">
+                        — Lamek Semere
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant mt-auto rounded-t-lg">
+        <div
+            class="w-full px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-md">
+            <!-- Brand & Copyright -->
+            <div class="space-y-sm">
+                <div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">
+                    Math Hub
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant max-w-sm">
+                    © 2026 Math Hub, by a student who cares—
+                    Cheering young mathematicians everywhere.
+                </p>
+            </div>
+            <!-- Links -->
+            <nav class="flex flex-wrap gap-x-lg gap-y-sm">
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="multiplication.html">Multiplication</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="division.html">Division</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="fractions.html">Fractions</a>
+                <a class="font-label-sm text-label-sm text-secondary dark:text-secondary-fixed font-bold opacity-80 hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="about_me.html">About Me</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:underline hover:text-primary dark:hover:text-primary-fixed-dim transition-colors"
+                    href="contact_us.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>
